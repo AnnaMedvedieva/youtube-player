@@ -8,3 +8,4 @@
 /build
 /captures
 .externalNativeBuild
+/app/src/main/java/org/company/example/annamedvedieva/youtubeplayer/ApiKeyUtil.java
