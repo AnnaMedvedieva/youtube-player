@@ -11,10 +11,11 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
+import static org.company.example.annamedvedieva.youtubeplayer.ApiKeyUtil.GOOGLE_API_KEY;
+
 public class YoutubeActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
     private static final String TAG = "YoutubeActivity";
-    static final String GOOGLE_API_KEY = "AIzaSyBkzZpIGrUnFTlAw6UluzKm525OfxETe7g";
     static final String YOUTUBE_VIDEO_ID = "yLc6VFC-Wgk";
     static final String YOUTUBE_PLAYLIST = "PLWz5rJ2EKKc8WFYCR9esqGGY0vOZm2l6e";
 

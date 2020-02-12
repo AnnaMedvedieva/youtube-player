@@ -8,6 +8,8 @@ import android.widget.Button;
 
 import com.google.android.youtube.player.YouTubeStandalonePlayer;
 
+import static org.company.example.annamedvedieva.youtubeplayer.ApiKeyUtil.GOOGLE_API_KEY;
+
 public class StandaloneActivity extends AppCompatActivity implements View.OnClickListener{
 
     @Override
@@ -28,10 +30,10 @@ public class StandaloneActivity extends AppCompatActivity implements View.OnClic
 
         switch(v.getId()){
             case R.id.btnPlayVideo:
-                intent = YouTubeStandalonePlayer.createVideoIntent(this, YoutubeActivity.GOOGLE_API_KEY, YoutubeActivity.YOUTUBE_VIDEO_ID, 0, true, false);
+                intent = YouTubeStandalonePlayer.createVideoIntent(this, GOOGLE_API_KEY, YoutubeActivity.YOUTUBE_VIDEO_ID, 0, true, false);
                 break;
             case R.id.btnPlayPlaylist:
-                intent = YouTubeStandalonePlayer.createPlaylistIntent(this, YoutubeActivity.GOOGLE_API_KEY, YoutubeActivity.YOUTUBE_PLAYLIST, 0, 0,true, false);
+                intent = YouTubeStandalonePlayer.createPlaylistIntent(this, GOOGLE_API_KEY, YoutubeActivity.YOUTUBE_PLAYLIST, 0, 0,true, false);
                 break;
 
                 default:
