@@ -26,7 +26,7 @@ public class YoutubeActivity extends YouTubeBaseActivity implements YouTubePlaye
         setContentView(layout);
 
         YouTubePlayerView playerView = new YouTubePlayerView(this);
-        playerView.setLayoutParams(new ConstraintLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+        playerView.setLayoutParams(new ConstraintLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         layout.addView(playerView);
         playerView.initialize(GOOGLE_API_KEY,this);
     }
